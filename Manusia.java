@@ -2,16 +2,14 @@ public class Manusia {
     // Atribut
     public String nama;
     public int tahunLahir;
-    public double beratBadan; // dalam kg
-    public double tinggiBadan; // dalam meter
+    public double beratBadan;
+    public double tinggiBadan;
 
-    // Method untuk menghitung BMI
     public double hitungBMI() {
         double bmi = beratBadan / (Math.pow(tinggiBadan, 2));
         return bmi;
     }
 
-    // Method tambahan untuk menentukan status berat badan
     public String getStatusBMI() {
         double bmi = hitungBMI();
         if (bmi < 18.5) {
